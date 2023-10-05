@@ -1,0 +1,19 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "//#lint": {
+      "dependsOn": ["//#lint:prettier", "//#lint:eslint"],
+      "cache": false
+    },
+    "//#lint:prettier": {
+      "cache": false
+    },
+    "//#lint:eslint": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

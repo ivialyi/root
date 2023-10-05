@@ -1,0 +1,22 @@
+{
+  "name": "@ivialyi/root",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint --ext .ts,.tsx ."
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "eslint": "8.50.0",
+    "eslint-plugin-turbo": "1.10.15",
+    "prettier": "3.0.3",
+    "turbo": "1.10.15"
+  },
+  "peerDependencies": {
+    "typescript": "5.2.2"
+  }
+}
